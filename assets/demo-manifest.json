@@ -1,0 +1,35 @@
+{
+  "config": {
+    "current_ma": 0.5,
+    "electrodes": 16,
+    "experiment": "synthetic-eit-bench",
+    "frequency_hz": 50000,
+    "seed": 42,
+    "solver": {
+      "name": "example-only",
+      "regularization": 0.01
+    }
+  },
+  "digest": "cf0163ff777cf74d633cf753ada10f9a02d874c6baeecbb7be2e2d46c0e6eced",
+  "files": [
+    {
+      "path": "input/voltages.csv",
+      "sha256": "5e4eda0548683232fe17c071cbbc176aecf055a3e9ee58a9f24574a2153d325b",
+      "size": 113
+    }
+  ],
+  "inputs": [
+    {
+      "kind": "directory",
+      "path": "input"
+    }
+  ],
+  "label": "nectar-atlas-dune-zenith-xenon-cf0163ff",
+  "policy": {
+    "exclude": [],
+    "include_hidden": false,
+    "symlinks": "skip"
+  },
+  "schema": "run-capsule/v1",
+  "skipped_symlinks": []
+}

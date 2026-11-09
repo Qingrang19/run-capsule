@@ -1,0 +1,11 @@
+{
+  "missing": [],
+  "modified": [
+    "input/voltages.csv"
+  ],
+  "new": [
+    "input/notes.txt"
+  ],
+  "ok": false,
+  "skipped_symlinks": []
+}
