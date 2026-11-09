@@ -96,7 +96,7 @@ python -m run_capsule verify saved-run.json --root restored-experiment
 
 摘要载荷严格由 `schema`、`inputs`、`policy`、`config`、`files` 组成。以 Python `json.dumps(ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)` 编码为 UTF-8 后计算 SHA256。最终清单使用缩进排版，排版不影响摘要。修改配置对象会改变摘要；配置文件本身只有显式选择后才作为文件核验。verify 验证的是清单内保存的配置，不会重新打开当初的 `--config` 文件。
 
-可读标签使用项目独立编写的 32 个自然/实验词语。取摘要第 9–16 个十六进制字符表示的整数，自低位起读取五个 5-bit 块选词，再附加摘要前八个十六进制字符。这给出 57 位短标识信息，而非完整 256 位身份。**标签可能碰撞，不可用于身份认证、签名、访问控制或大规模去重；正式记录应保留完整 digest。**
+可读标签使用32 个自然/实验词语。取摘要第 9–16 个十六进制字符表示的整数，自低位起读取五个 5-bit 块选词，再附加摘要前八个十六进制字符。这给出 57 位短标识信息，而非完整 256 位身份。**标签可能碰撞，不可用于身份认证、签名、访问控制或大规模去重；正式记录应保留完整 digest。**
 
 清单的自检可发现意外改动，但没有密钥或签名。攻击者能同时修改内容和摘要，因此清单不是来源可信的证明。
 
@@ -117,12 +117,8 @@ python -m run_capsule verify saved-run.json --root restored-experiment
 run_capsule/core.py       选择、流式哈希、规范化、标签、核验
 run_capsule/__main__.py   argparse CLI、JSON 输入输出、退出码
 examples/                合成 EIT 输入、参数、可核验清单
-assets/logo.svg          独立绘制的矢量标识
+assets/logo.svg          矢量标识
 tests/test_capsule.py    单元与 CLI 子进程测试
 ```
 
 测试覆盖确定性、SHA256 已知值、元数据顺序、差异分类、显式范围、重叠去重、隐藏文件、输出排除、路径穿越、符号链接、篡改检测、跨根目录搬移、mtime、空目录、Unicode、非法数值以及 CLI 成功/差异/拒绝覆盖。Linux 已运行通过；未声称做过 Windows 或 macOS 实机验证。
-
-## 来源与独立实现
-
-本项目借鉴的是“给摘要增加可读名字”和“记录实验输入清单”的通用问题类别。算法、词表、文档、测试、合成数据与 SVG 均独立编写，未复制 其他项目的代码、词表、文档或资产。不存在第三方运行时依赖。
