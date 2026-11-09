@@ -1,0 +1,8 @@
+{
+  "experiment": "synthetic-eit-bench",
+  "frequency_hz": 50000,
+  "current_ma": 0.5,
+  "electrodes": 16,
+  "solver": {"name": "example-only", "regularization": 0.01},
+  "seed": 42
+}

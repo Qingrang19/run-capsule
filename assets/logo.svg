@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="200" viewBox="0 0 640 200" role="img" aria-labelledby="title desc">
+<title id="title">run-capsule</title><desc id="desc">A capsule encloses a fingerprint waveform and three experiment nodes.</desc>
+<rect width="640" height="200" rx="24" fill="#102437"/>
+<rect x="30" y="35" width="145" height="130" rx="65" fill="none" stroke="#59e1c1" stroke-width="5"/>
+<path d="M49 104h21l12-28 21 52 16-37 15 13h22" fill="none" stroke="#ffce77" stroke-width="5" stroke-linejoin="round"/>
+<path d="M103 36v20m0 89v20" stroke="#59e1c1" stroke-width="4"/>
+<circle cx="206" cy="71" r="6" fill="#59e1c1"/><circle cx="206" cy="100" r="6" fill="#ffce77"/><circle cx="206" cy="129" r="6" fill="#59e1c1"/>
+<text x="230" y="103" font-family="monospace" font-size="40" font-weight="bold" fill="#f1f7fa">run-capsule</text>
+<text x="233" y="133" font-family="sans-serif" font-size="15" letter-spacing="2" fill="#a6c3d5">SCOPE · HASH · REPEAT</text>
+</svg>

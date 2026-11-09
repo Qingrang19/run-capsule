@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "run-capsule"
+version = "0.1.0"
+description = "Explicit experiment manifests with deterministic readable run labels"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+run-capsule = "run_capsule.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["run_capsule*"]

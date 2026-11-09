@@ -1,0 +1,37 @@
+{
+  "config": {
+    "current_ma": 0.5,
+    "electrodes": 16,
+    "experiment": "synthetic-eit-bench",
+    "frequency_hz": 50000,
+    "seed": 42,
+    "solver": {
+      "name": "example-only",
+      "regularization": 0.01
+    }
+  },
+  "digest": "d41650c2457236188e1c7036d8f53a4eae85e4a8b4a3110f03093bd271dfe2b9",
+  "files": [
+    {
+      "path": "input/voltages.csv",
+      "sha256": "5e4eda0548683232fe17c071cbbc176aecf055a3e9ee58a9f24574a2153d325b",
+      "size": 113
+    }
+  ],
+  "inputs": [
+    {
+      "kind": "directory",
+      "path": "input"
+    }
+  ],
+  "label": "yarrow-quartz-nectar-ember-xenon-d41650c2",
+  "policy": {
+    "exclude": [
+      "manifest.json"
+    ],
+    "include_hidden": false,
+    "symlinks": "skip"
+  },
+  "schema": "run-capsule/v1",
+  "skipped_symlinks": []
+}

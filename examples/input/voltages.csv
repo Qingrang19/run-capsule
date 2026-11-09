@@ -1,0 +1,5 @@
+frame,drive_a,drive_b,sense_a,sense_b,voltage_uv
+0,1,2,3,4,1.250
+0,1,2,4,5,1.125
+1,1,2,3,4,1.249
+1,1,2,4,5,1.126
